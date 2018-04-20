@@ -1,5 +1,8 @@
 package es.upm.dit.isst.web.servlets;
 
-public class LoginProfesor {
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+@WebServlet("/LoginProfesor")
+public class LoginProfesor extends HttpServlet {
 
 }

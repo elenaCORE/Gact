@@ -90,38 +90,22 @@
 									 
 									<a class="list-group-item active">Grado en ingeniería de servicios y sistemas de Telecomunicación
 									</a>
-										<a href="#" class="list-group-item"> 
-										<div>
-										<label for="checkbox" onClick="window.location.href='Estadisticas.jsp'">Fundamentos de los sistemas telemáticos</label>
-										<button type="button" class="btn btn-info pull-right" id="login-button" onClick="window.location.href='Formulario.jsp'">Coordinar Asignatura
-										</button>
-										</div>
+									
+										
+										
+									<c:forEach items="${lista_asignaturas}" var="asignatura">
 									 </a>
 										<a href="#" class="list-group-item">
 										<div>
-										<label for="checkbox" onClick="window.location.href='index.jsp'">Programacion<label>
+										<label for="checkbox" onClick="window.location.href='index.jsp'">${asignatura.nombreAsignatura}<label>
 										</div>
+									
+										
 									</a>
-										<a href="#" class="list-group-item">
-										<div>
-										<label for="checkbox" onClick="window.location.href='index.jsp'">
-																			Análisis y diseño de software
-										</label>
-									 ignatura
-										</button>
-										</div>
-										</a>
+										</c:forEach>
 										
 										
 
-									<a href="#" class="list-group-item">
-									<div>
-									<label for="checkbox" onClick="window.location.href='index.jsp'">
-																			Teoria de la informacion
-									</label>
-								
-								 </div>
-								</a>
 
 								</ul>
 						</div>

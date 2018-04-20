@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 public class Departamento implements Serializable {
 
 	@Id
-	private Long departamentoID;
+	private String departamentoID;
 	private String nombre;
 	private String responsableEmail;
 	@OneToMany(mappedBy="departamento",fetch=FetchType.EAGER)
@@ -25,10 +25,10 @@ public class Departamento implements Serializable {
 		this.asignaturasDepartamento=new ArrayList<>();
 		this.profesoresDepartamento=new ArrayList<>();
 	}
-	public Long getDepartamentoID() {
+	public String getDepartamentoID() {
 		return departamentoID;
 	}
-	public void setDepartamentoID(Long departamentoID) {
+	public void setDepartamentoID(String departamentoID) {
 		this.departamentoID = departamentoID;
 	}
 	public String getNombre() {

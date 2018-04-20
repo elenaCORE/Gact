@@ -17,6 +17,8 @@ public class Asignatura implements Serializable {
 	@Id
 	private Long asignaturaID;
 	private String titulacion;
+	private String nombreAsignatura;
+	
 	private int nGrupos;
 	private int semestre;
 	private int creditos;
@@ -43,6 +45,12 @@ public class Asignatura implements Serializable {
 	}
 	public void setTitulacion(String titulacion) {
 		this.titulacion = titulacion;
+	}
+	public String getNombreAsignatura() {
+		return nombreAsignatura;
+	}
+	public void setNombreAsignatura(String nombreAsignatura) {
+		this.nombreAsignatura = nombreAsignatura;
 	}
 	public int getnGrupos() {
 		return nGrupos;

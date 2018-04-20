@@ -26,7 +26,7 @@ public class FormNuevoProfSecServlet extends HttpServlet{
 			nuevoProfesor.setPassword(password);
 			ProfesorDAOImplementation.getInstance().createProfessor(nuevoProfesor);
 		}
-		resp.sendRedirect(req.getContextPath()+"/LoginSecretaria.jsp");	
+		resp.sendRedirect(req.getContextPath()+"/FormNuevoProfSec.jsp");	
 		
 	}
 

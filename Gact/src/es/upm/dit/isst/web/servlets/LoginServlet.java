@@ -30,7 +30,8 @@ public class LoginServlet extends HttpServlet {
 		} else if ( null != profesor ) {
 
 			req.getSession().setAttribute("professor", profesor);
-			resp.sendRedirect(req.getContextPath() + "/LoginProfesor.jsp");
+			req.getSession().setAttribute("tabla_asignaturas", profesor.getAsignaturasImpartidas());
+			resp.sendRedirect(req.getContextPath() + "/MisAsignaturas.jsp");
 
 		} else {
 
